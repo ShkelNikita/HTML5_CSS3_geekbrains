@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #445161;
+  color: #fff;
+  font-family: Arial;
+}
+
+.main-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.main-header-wrp {
+  width: 458px;
+  float: left;
+}
+
+.main-header-title {
+  margin: 0 0 10px 0;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.main-header-list {
+  padding: 0 0 0 20px;
+  margin: 0 0 0 0;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.main-header-list-item {
+  list-style-type: none;
+  position: relative;
+}
+
+.main-header-list-item:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("https://cdn.icon-icons.com/icons2/510/PNG/512/checkmark_icon-icons.com_50429.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: -18px;
+}
+
+.main-header-img {
+  display: block;
+  width: 469px;
+  min-height: 214px;
+  float: right;
+  background-color: #fff;
+  color: #000;
+}
+
+/*
+-----------------------------------------------------------
+Section - About your product
+*/
+
+.section-about {
+  padding: 50px;
+  max-width: 1280px;
+  max-height: 340px;
+  font-family: arial;
+  align-self: center;
+}
+
+.section-about-text-part {
+  max-width: 646px;
+  float: left;
+}
+
+.section-about-heading {
+  font-size: 30px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #445161;
+}
+
+.section-about-txt {
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.section-about-video-part {
+  display: block;
+  width: 30%;
+  height: 75%;
+  box-sizing: border-box;
+  margin: 45px 50px 50px auto;
+  background-color: #445161;
+  float: right;
+}
+
+/*
+-----------------------------------------------------------
+Section - Dignity and pluses product
+*/
+
+.section-dignity {
+  font-family: arial;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-dignity-heading {
+  font-size: 30px;
+  line-height: 120%px;
+  display: flex;
+  margin-bottom: 22px;
+  align-items: center;
+  color: #445161;
+}
+
+.section-dignity-list {
+  display: flex;
+  margin-left: 50px;
+}
+
+.section-dignity-list-item {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  margin: 22px 50px 33px 36px;
+}
+
+.section-dignity-list-item::before {
+  content: "+";
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  margin-right: 8px;
+  float: left;
+  min-width: 35px;
+  height: 34px;
+  color: #fff;
+  background-color: #445161;
+}
+
+/*
+-----------------------------------------------------------
+Section - Screenshots
+*/
+
+.section-screenshots {
+  font-family: arial;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-screenshots-box {
+  display: flex;
+  margin-left: 50px;
+}
+
+.section-screenshots-heading {
+  font-size: 30px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #445161;
+  margin-bottom: 45px;
+}
+
+.section-screenshots-figure {
+  display: flex;
+  margin: auto auto 27px 30px;
+}
+
+.section-screenshots-figure-img {
+  display: block;
+  min-width: 202px;
+  min-height: 153px;
+  background-color: #445161;
+}
+
+.section-screenshots-figure-txt {
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+@media (max-width: 426px) {
+  .main-header-title {
+    font-size: 45px;
+  }
+  .main-header {
+    box-sizing: content-box;
+  }
+  .section-about {
+    padding: 25px;
+    max-width: 425px;
+    max-height: 750px;
+  }
+  .section-about-video-part {
+    width: 100%;
+    height: 100%;
+    margin: 10px 15px 15px auto;
+    float: none;
+  }
+  .section-dignity {
+    max-width: 425px;
+  }
+
+  .section-dignity-list {
+    margin-left: 15px;
+  }
+  .section-dignity-list-item {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 5px 7px 20px 5px;
+  }
+  .section-dignity-list-item::before {
+    padding: 4px;
+    font-size: 16px;
+    margin-right: 8px;
+    width: 12px;
+    min-height: 11px;
+  }
+  .section-dignity-list {
+    display: block;
+    margin-left: 50px;
+  }
+
+  .section-screenshots {
+    max-width: 425px;
+  }
+  .section-screenshots-box {
+    display: block;
+  }
+  .section-screenshots-figure-img {
+    max-width: 50px;
+    max-height: 30px;
+  }
+}
