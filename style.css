@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -126,6 +132,7 @@ Section - Dignity and pluses product
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
 }
 
 .section-dignity-heading {
@@ -177,6 +184,7 @@ Section - Screenshots
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
 }
 
 .section-screenshots-box {
@@ -213,6 +221,403 @@ Section - Screenshots
   align-items: center;
   color: #333333;
 }
+
+/*
+-----------------------------------------------------------
+Section - Reviews
+*/
+
+.section-reviews {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  align-self: center;
+}
+
+.section-reviews-heading {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 120%px;
+  display: flex;
+  align-items: center;
+  color: #445161;
+  align-self: center;
+}
+
+.section-reviews-txtbox {
+  display: flex;
+}
+
+.section-reviews-txtbox-commentary {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  margin: 29px 20px 22px 58px;
+}
+
+.section-reviews-txtbox-userpic {
+  background-color: #445161;
+  border-radius: 100%;
+  margin: auto 30px 55px auto;
+  align-self: stretch;
+  min-width: 66px;
+  min-height: 66px;
+}
+
+.section-reviews-txtbox-textsection {
+  background-color: #ebebeb;
+  border-radius: 5px;
+  max-width: 432px;
+}
+
+.section-reviews-txtbox-comentator {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 129%;
+  display: flex;
+  align-items: center;
+  color: #989898;
+}
+
+/*
+-----------------------------------------------------------
+Section - Buy
+*/
+
+.section-buy {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+}
+
+.section-buy-heading {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 120%;
+  align-self: center;
+  color: #445161;
+  margin: 45px auto 26px auto;
+}
+
+.section-buy-offers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section-buy-offers-pack {
+  margin: auto 22.5px 50px 22.5px;
+  background: #445161;
+  max-width: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.small {
+  flex-grow: 1;
+}
+
+.medium {
+  flex-grow: 1.3;
+}
+
+.large {
+  flex-grow: 1.6;
+}
+
+.section-buy-offers-pack-heading {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 125%;
+  display: block;
+  margin: 14px auto 7px auto;
+  color: #ffffff;
+}
+
+.section-buy-offers-pack-pricing {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  padding-bottom: 16px;
+  min-height: 71px;
+  background: #ffffff;
+  border: 2px solid #445162;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 75%;
+  color: #445162;
+}
+
+.section-buy-offers-pack-features {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%px;
+  color: #ffffff;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.section-buy-offers-pack-feature {
+  margin-left: 20px;
+  padding-top: 8px;
+}
+
+.section-buy-offers-pack-buybtn {
+  background: #ffffff;
+  width: 262px;
+  height: 43px;
+  margin: 19px;
+  border-radius: 10px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  color: #445161;
+}
+
+/*
+-----------------------------------------------------------
+Footer - Contacts
+*/
+
+.contacts {
+  max-width: 1280px;
+  min-height: 509px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+  background: #445162;
+}
+
+.contacts-heading {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 120%;
+  color: #ffffff;
+  margin: 25px auto 43px auto;
+}
+
+.contacts-box {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-box-form {
+  width: 503px;
+  height: 357px;
+}
+
+.contacts-box-form-inputbox {
+  border-radius: 5px;
+  display: block;
+  color: #445162;
+  width: 503px;
+  height: 43px;
+  margin: auto auto 18px auto;
+}
+
+.contacts-box-form-inputtextbox {
+  display: block;
+  width: 503px;
+  height: 173px;
+  border-radius: 5px;
+  margin: auto auto 18px auto;
+  color: #445162;
+  align-content: start;
+}
+
+.contacts-box-form-inputbtn {
+  display: block;
+  border-radius: 5px;
+  width: 143px;
+  height: 43px;
+  margin: 18px auto 48px auto;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #445162;
+}
+
+.contacts-box-referenses {
+}
+
+.contacts-box-referenses-text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.contacts-box-referenses-text-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contacts-box-referenses-text-list-skype {
+  position: relative;
+  margin: auto auto 18px 70px;
+}
+
+.contacts-box-referenses-text-list-skype:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("images/skype icon.svg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 3px;
+  left: -27px;
+}
+
+.contacts-box-referenses-text-list-icq {
+  position: relative;
+  margin: auto auto 19px 70px;
+}
+
+.contacts-box-referenses-text-list-icq:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("images/icq icon.svg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 3px;
+  left: -27px;
+}
+
+.contacts-box-referenses-text-list-mail {
+  position: relative;
+  margin: auto auto 21px 70px;
+}
+
+.contacts-box-referenses-text-list-mail:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("images/email icon.svg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 3px;
+  left: -27px;
+}
+
+.contacts-box-referenses-text-list-phone {
+  margin: auto auto auto 70px;
+  position: relative;
+}
+
+.contacts-box-referenses-text-list-phone:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("images/bx_bx-phone.svg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 3px;
+  left: -27px;
+}
+
+.contacts-box-referenses-icons {
+  margin-top: 50px;
+}
+
+.contacts-box-referenses-icons-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+
+.contacts-box-referenses-icons-list-icon_Twitter {
+  margin: 3px;
+  display: block;
+  width: 51px;
+  height: 51px;
+  background-image: url("images/twitter.svg");
+}
+
+.contacts-box-referenses-icons-list-icon_Vk {
+  margin: 3px;
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-image: url("images/vk.svg");
+}
+
+.contacts-box-referenses-icons-list-icon_Google {
+  margin: 3px;
+  display: block;
+  width: 54px;
+  height: 54px;
+  background-image: url("images/google.svg");
+}
+
+.contacts-box-referenses-icons-list-icon_Facebook {
+  margin: 3px;
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-image: url("images/facebook.svg");
+}
+
+.address-copyright {
+  margin: 13px auto 12px;
+  align-self: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  color: #445162;
+}
+
+/*
+-----------------------------------------------------------
+Media
+*/
 
 @media (max-width: 426px) {
   .main-header-title {
